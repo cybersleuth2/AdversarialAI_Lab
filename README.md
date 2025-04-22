@@ -1,6 +1,6 @@
 # Lab_AI 1.0
 
-# Adversarial AI Lab
+# Adversarial AI Lab (CPU ONLY)
 
 ## Overview
 
