@@ -2,11 +2,28 @@
 
 # Adversarial AI Lab (CPU ONLY)
 
-###TO DO: fill the folders while building out the lab modules, experiments, and dashboard. 
-
 ## Overview
 
-This repository contains the resources for setting up and running an Adversarial AI Lab. The lab allows you to experiment with adversarial attacks and defenses using popular libraries and frameworks in machine learning. 
+This repository contains the resources for setting up and running an Adversarial AI Lab. The lab allows you to experiment with adversarial attacks and defenses using popular libraries and frameworks in machine learning.
+
+## Dashboard v Notebook
+Component	Purpose
+Notebooks	Step-by-step, interactive tutorials for learning, testing, and iterating.
+Flask Dashboard	Visual front-end for quick access, running attacks, uploading models/data.
+
+When to Use Each One
+   Use the Notebook (FGSM.ipynb) when:
+      You're learning or experimenting.
+      You want to follow each step manually.
+      You’re reviewing or debugging results.
+      You want fine control over attack parameters and code.
+
+   Use the Flask Dashboard when:
+      You want a simple UI for testing without coding.
+      You want to upload models or data and run attacks.
+      You’re demonstrating your lab or showing others.
+      You want to keep everything light and unified in a browser.
+
 
 ## Goals
 
