@@ -1,9 +1,5 @@
 # Lab_AI 1.0
 
-You're right! If `setup_lab.py` handles the setup and installation of the environment, the README should focus on guiding users to run `setup_lab.py` as the first step. Here's an updated README structure that matches your approach:
-
----
-
 # Adversarial AI Lab
 
 ## Overview
