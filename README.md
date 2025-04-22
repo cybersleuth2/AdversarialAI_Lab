@@ -73,8 +73,7 @@ This repository contains the resources for setting up and running an Adversarial
       -  index.html: This will be your HTML template that the user sees. Save it inside the templates/ folder.
       -  styles.css: This file contains the custom CSS for styling the dashboard. Save it inside static/folder.
       -  script.js: save it inside static/folder
-   b. activate virtual environment. before  running any script, ensure venv is activated
-      source venv/bin/activate 
+   b. activate virtual environment. before  running any script, ensure venv is    activated source venv/bin/activate 
    c. install dependencies pip install -r requirements.txt
    d. run the flas application python app.py
    e. visit the URL and access the dashboard
@@ -82,8 +81,10 @@ This repository contains the resources for setting up and running an Adversarial
 
 7. **Script to locate the venv for Dashboard**
    - save this activate_venv.sh script in the Dashboard/ folder
+   - if needed, dos2unix activate_venv.sh
    - make it executable chmod +x activate_venv.sh
    - run it from inside the dashboard/ folder ./activate_venv.sh
+     
 9. **Run the Lab:**
 
 
