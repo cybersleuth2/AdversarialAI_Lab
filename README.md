@@ -66,7 +66,7 @@ This repository contains the resources for setting up and running an Adversarial
    ![image](https://github.com/user-attachments/assets/1390c5b1-4441-4901-a8dd-c7bc89d887a4)
 
 6. See the folder for how to create the Adversarial AI Dashboard
-6. *Run the Attack Simulations:**
+7. **Run the Attack Simulations:**
 
 
 
