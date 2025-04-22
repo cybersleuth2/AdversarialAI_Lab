@@ -1,6 +1,8 @@
 **Setup the AdversarialAI Dashboard
    a. create a folder called "Lab-1.0_Dashboard in the project directory to hold all the files
+   
    ![image](https://github.com/user-attachments/assets/31329325-9bde-4605-b7f7-1ee7c0b89a88)
+   
       -  app.py: This is the main Flask application file. Save it in the project root 
       -  requirements.txt: This will contain all the Python dependencies for the Flask Dashboard. Save it in the project root       
       -  index.html: This will be your HTML template that the user sees. Save it inside the templates/ folder.
@@ -22,3 +24,9 @@
   - python app.py from the venv
   - visit http://127.0.0.1:5000 in any browser
   - navigate attack simulations from here
+
+![image](https://github.com/user-attachments/assets/47d294b2-7e20-4815-8c30-c61e956c81a7)
+
+![image](https://github.com/user-attachments/assets/d7a46e4c-3d04-4b01-907c-c06f6c352e57)
+
+    
