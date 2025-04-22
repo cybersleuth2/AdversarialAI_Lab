@@ -6,6 +6,22 @@
 
 This repository contains the resources for setting up and running an Adversarial AI Lab. The lab allows you to experiment with adversarial attacks and defenses using popular libraries and frameworks in machine learning. 
 
+## Goals
+
+- Learn how adversarial attacks work
+- Simulate real-world AI red teaming scenarios
+- Practice defense and mitigation strategies
+- Build a portfolio-ready lab project
+
+## Pre-Installed Frameworks
+
+- Pre-installed Frameworks:
+- TensorFlow 2.10 (CPU)
+- PyTorch (CPU-only)
+- CleverHans, ART, Foolbox, TextAttack
+- Flask (for local dashboards)
+- JupyterLab (for notebooks)
+
 ## Quick Setup
 
 1. **Clone the Repository:**
@@ -49,6 +65,20 @@ This repository contains the resources for setting up and running an Adversarial
   - `attacks/`: Scripts and experiments related to adversarial attacks.
   - `defenses/`: Scripts and experiments related to adversarial defenses.
   - `models/`: Pre-trained models used in the lab experiments.
+ 
+    AdversarialAI_Lab/
+│
+├── setup_lab.py               # Full environment setup script
+├── install.sh                 # Optional manual install shell script
+├── requirements.txt           # All dependencies, including CPU-only
+├── /docs                      # Tutorials, guides, and visuals
+│   ├── usage_guide.md
+│   ├── attack_tutorials.md
+│   ├── dashboard_plan.md
+│   └── diagrams/
+│       └── architecture.png
+└── /notebooks                 # Sample adversarial attack notebooks
+
 
 ## Usage
 
