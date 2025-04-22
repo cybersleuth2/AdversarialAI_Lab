@@ -61,9 +61,10 @@ This repository contains the resources for setting up and running an Adversarial
    torchvision==0.15.0+cpu    torchaudio==2.0.0+cpu \ -f https://download.pytorch.org/whl/cpu/torch_stable.html   --> This is 
    needed because CPU-only versions aren’t on the default PyPI index.
 
-5. **Create teh Lab Structure/Folderes**
+5. **Auto-Create the Lab Structure**
    Save it as create_lab_structure.py in your project root.  Run it from your terminal. This will neatly generate your folders, each    with a simple README to keep things organized:    python3 create_lab_structure.py
-   
+   ![image](https://github.com/user-attachments/assets/1390c5b1-4441-4901-a8dd-c7bc89d887a4)
+
 6. **Run the Lab:**
 
    After activation, you can begin working with the lab! Refer to the `docs/` folder for detailed tutorials, guides, and diagrams on using the lab effectively.
