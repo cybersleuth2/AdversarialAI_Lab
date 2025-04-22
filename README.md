@@ -2,6 +2,8 @@
 
 # Adversarial AI Lab (CPU ONLY)
 
+###TO DO: fill the folders while building out the lab modules, experiments, and dashboard. 
+
 ## Overview
 
 This repository contains the resources for setting up and running an Adversarial AI Lab. The lab allows you to experiment with adversarial attacks and defenses using popular libraries and frameworks in machine learning. 
@@ -55,8 +57,12 @@ This repository contains the resources for setting up and running an Adversarial
    ```
    ![image](https://github.com/user-attachments/assets/587c9115-63fa-479c-b409-94a44cae3bd4)
 
-   NOTE: the setup_lab.py already ran the requirements.txt file, however, the file is included in this repo as refernce and for future updates:  pip install -r requirements.txt and if that doesn't work then: pip install torch==2.0.0+cpu torchvision==0.15.0+cpu torchaudio==2.0.0+cpu \ -f https://download.pytorch.org/whl/cpu/torch_stable.html   --> This is needed because CPU-only versions aren’t on the default PyPI index.
+   NOTE: the setup_lab.py already ran the requirements.txt file, however, the file is included in this repo as refernce and for         future updates:  pip install -r requirements.txt and if that doesn't work then: pip install torch==2.0.0+cpu 
+   torchvision==0.15.0+cpu    torchaudio==2.0.0+cpu \ -f https://download.pytorch.org/whl/cpu/torch_stable.html   --> This is 
+   needed because CPU-only versions aren’t on the default PyPI index.
 
+5. **Create teh Lab Structure/Folderes**
+   Save it as create_lab_structure.py in your project root.  Run it from your terminal. This will neatly generate your folders, each    with a simple README to keep things organized:    python3 create_lab_structure.py
    
 6. **Run the Lab:**
 
