@@ -7,9 +7,9 @@
 This repository contains the resources for setting up and running an Adversarial AI Lab. The lab allows you to experiment with adversarial attacks and defenses using popular libraries and frameworks in machine learning.
 
 ## Dashboard v Notebook
-Component	Purpose
-Notebooks	Step-by-step, interactive tutorials for learning, testing, and iterating.
-Flask Dashboard	Visual front-end for quick access, running attacks, uploading models/data.
+This lab has an integrated testing notebook as well as a testing dashboard
+   Notebooks: Step-by-step, interactive tutorials for learning, testing, and iterating.
+   Flask Dashboard: Visual front-end for quick access, running attacks, uploading models/data.
 
 When to Use Each One
    Use the Notebook (FGSM.ipynb) when:
