@@ -1,0 +1,15 @@
+📘 Notebook name: FGSM.ipynb
+📁 Path: notebooks/FGSM.ipynb
+
+Here's what the notebook will include:
+
+Load a small test image from MNIST.
+
+Load a pretrained model (from models/simple_mnist.pth).
+
+Generate an FGSM adversarial example.
+
+Show original, adversarial, and difference side by side.
+
+Explain predictions before and after.
+
