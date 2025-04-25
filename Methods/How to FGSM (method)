@@ -1,0 +1,41 @@
+✅ How to Run fgsm.py from the methods/ Folder
+Activate your virtual environment (if not already activated):
+source venv/bin/activate
+
+Run the FGSM script from the root of your lab directory:
+python3 methods/fgsm.py
+
+The script will:
+	Load the MNIST dataset.
+	Train a tiny CNN (if no saved model is found).
+	Apply the FGSM attack.
+	Print predictions on clean vs. adversarial images.
+	Save a sample image comparison (fgsm_adversarial_example.png) in the root directory.  User can review and create a folder to save, accordingly.
+
+
+Look for:Terminal logs showing accuracy before/after the attack.
+
+─$ python3 methods/fgsm.py
+[INFO] Training a small model first...
+[INFO] Model trained and saved.
+[INFO] Original prediction: 6
+[INFO] Adversarial prediction: 6
+[INFO] Images saved: original_example.png, fgsm_adversarial_example.png
+[INFO] Comparison image saved: comparison.png
+
+
+## TROUBLESHOOTING
+
+PROBLEM:  python3 methods/fgsm.py  gives a NumPy error.
+REASON: NumPy 2.2.5 is not compatible
+SOLUTION: Downgrade to the latest 1.x version
+  pip uninstall numpy
+  pip install numpy==1.26.4   (or 1.24.4, if needed)
+      Successfully installed numpy-1.26.4 
+  run python3 methods/fgsm.py again
+      [INFO] Training a small model first...
+      [INFO] Model trained and saved.
+      [INFO] Original prediction: 6
+      [INFO] Adversarial prediction: 6
+      [INFO] Images saved: original_example.png, fgsm_adversarial_example.png
+      [INFO] Comparison image saved: comparison.png
