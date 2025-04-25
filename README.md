@@ -10,6 +10,7 @@ This lab is for educational purposes only.  Also, please use at your own risk! W
 
 ## Adversarial AI Dashboard v Notebook
 This lab has an integrated testing notebook as well as a testing dashboard
+
  **Notebooks**: Step-by-step, interactive tutorials for learning, testing, and iterating. Use the Notebook when:
    - You're learning or experimenting.
    - You want to follow each step manually.
@@ -24,41 +25,20 @@ This lab has an integrated testing notebook as well as a testing dashboard
 
 
 ## Lab Diretory Structure
-/projects/AdversarialAI/
-│
-├── dashboard/                        # Dashboard UI and logic
-│   ├── dashboard.py                 # Renamed from app.py
-│   ├── templates/                   # HTML templates (Jinja2)
-│   └── static/                      # JS, CSS, images
-│
-├── methods/                         # Adversarial attack implementations
-│   ├── __init__.py
-│   ├── fgsm.py
-│   ├── pgd.py                       # Placeholder for future PGD attack
-│   └── ...                          # Other attack scripts
-│
-├── notebooks/                       # Jupyter notebooks for demonstrations
-│   ├── FGSM-PyTorch.ipynb
-│   └── ...                          # More notebook examples
-│
-├── datasets/                        # Placeholder for sample datasets
-│
-├── models/                          # Placeholder for pre-trained/test models
-│
-├── utils/                           # Helper scripts
-│   └── create_lab_structure.py      # Script to set up the structure
-│
-├── requirements.txt                 # Lightweight, CPU-only
-├── setup_lab.py                     # Unified setup script
-└── README.md                        # Project overview and instructions
+
+![image](https://github.com/user-attachments/assets/4f1c37b8-937c-4cd7-880f-40cfedd0eb3c)
+
 
 
 ## Pre-Installed Frameworks
+
+
 - TensorFlow 2.10 (CPU)
 - PyTorch (CPU-only)
 - CleverHans, ART, Foolbox, TextAttack
 - Flask (for local dashboards)
 - JupyterLab (for notebooks)
+
 
 ## Getting Started
 
@@ -107,7 +87,7 @@ This lab has an integrated testing notebook as well as a testing dashboard
 
 ## License
 
-This project is licensed under the MIT License see the LICENSE file for details.
+TBD
 
 ## Author
 
