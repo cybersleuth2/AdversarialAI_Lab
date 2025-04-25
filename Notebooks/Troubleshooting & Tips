@@ -3,5 +3,10 @@ REASON: NumPy 2.2.5 is not compatible
 SOLUTION: Downgrade to the latest 1.x version
   pip uninstall numpy
   pip install numpy==1.26.4   (or 1.24.4, if needed)
+      Successfully installed numpy-1.26.4 
   run python3 methods/fgsm.py again
-  
+      [INFO] Training a small model first...
+      [INFO] Model trained and saved.
+      [W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+      [INFO] Adversarial example created. Correct prediction: 0
+      [INFO] Saved example as fgsm_adversarial_example.png
