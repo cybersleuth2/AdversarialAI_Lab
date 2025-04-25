@@ -4,9 +4,6 @@
 
 This repository contains the resources for setting up and running an out-of-the-box Adversarial AI Lab for **CPU ONLY**. The lab facilitates experimentation with adversarial attacks using popular libraries and frameworks in machine learning.
 
-## disclaimer
-
-This lab is for educational purposes only.  Also, please use at your own risk! We are not responsible for supply chain risks associated with open-source requirements for this lab. Always follow best security practices.
 
 ## Adversarial AI Dashboard v Notebook
 This lab has an integrated testing notebook as well as a testing dashboard
@@ -26,18 +23,7 @@ This lab has an integrated testing notebook as well as a testing dashboard
 
 ## Lab Diretory Structure
 
-![image](https://github.com/user-attachments/assets/51f5073a-9187-4c07-9eae-0cbc3eac4103)
-
-
-
-## Pre-Installed Frameworks
-
-
-- TensorFlow 2.10 (CPU)
-- PyTorch (CPU-only)
-- CleverHans, ART, Foolbox, TextAttack
-- Flask (for local dashboards)
-- JupyterLab (for notebooks)
+![image](https://github.com/user-attachments/assets/e6435499-411f-447b-baaa-2a8540425233)
 
 
 ## Getting Started
@@ -55,9 +41,12 @@ This lab has an integrated testing notebook as well as a testing dashboard
 7. Verify the Structure Was Created running the tree command. If tree is not installed, install it with: sudo apt install tree and thentree ~<your path>
 8. To setup the AdversarialAI Dashboard, navigate to the dashboard folder from within venv THEN pip install flask THEN python3 dashboard/dashboard.py and THEN  visit http://127.0.0.1:5000  **Dashboard GUI In Proress**
 
-   ## Running FGSM
+## Running FGSM
 
 
+## Disclaimer
+
+This lab is for educational purposes only.  Also, please use at your own risk! We are not responsible for supply chain risks associated with open-source requirements for this lab. Always follow best security practices.
 
 
 ## License
