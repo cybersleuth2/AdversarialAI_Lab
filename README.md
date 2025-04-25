@@ -41,8 +41,6 @@ This lab has an integrated testing notebook as well as a testing dashboard
 7. Verify the Structure Was Created running the tree command. If tree is not installed, install it with: sudo apt install tree and thentree ~<your path>
 8. To setup the AdversarialAI Dashboard, navigate to the dashboard folder from within venv THEN pip install flask THEN python3 dashboard/dashboard.py and THEN  visit http://127.0.0.1:5000  **Dashboard GUI In Proress**
 
-## Running FGSM
-
 
 ## Disclaimer
 
@@ -55,4 +53,9 @@ TBD
 
 ## Author
 
-This project is created by Sonu Kumar using ChatGPT
+This project is created by Sonu Kumar using ChatGPT.
+
+
+# **LABS** 
+## FGSM
+
