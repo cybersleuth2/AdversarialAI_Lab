@@ -1,0 +1,6 @@
+PROBLEM:  python3 methods/fgsm.py  gives a NumPy error.
+REASON: NumPy 2.2.5 is not compatible
+SOLUTION: Downgrade to the latest 1.x version
+  pip uninstall numpy
+  pip install numpy==1.26.4   (or 1.24.4, if needed)
+  run python3 methods/fgsm.py again
