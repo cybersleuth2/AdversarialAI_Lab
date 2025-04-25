@@ -9,9 +9,10 @@ SOLUTION: Downgrade to the latest 1.x version
   run python3 methods/fgsm.py again
       [INFO] Training a small model first...
       [INFO] Model trained and saved.
-      [W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
-      [INFO] Adversarial example created. Correct prediction: 0
-      [INFO] Saved example as fgsm_adversarial_example.png
+      [INFO] Original prediction: 6
+      [INFO] Adversarial prediction: 6
+      [INFO] Images saved: original_example.png, fgsm_adversarial_example.png
+      [INFO] Comparison image saved: comparison.png
 
 
 
