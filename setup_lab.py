@@ -1,98 +1,194 @@
-#!/usr/bin/env python3
-
-
-
 import os
 
-import subprocess
-
-import sys
 
 
+lab_structure = [
 
-def run(command):
+    "dashboard/static/js",
 
-    print(f"[+] Running: {command}")
+    "dashboard/static/css",
 
-    subprocess.check_call(command, shell=True, executable='/bin/bash')
+    "dashboard/templates",
+
+    "methods",
+
+    "notebooks",
+
+    "setup"
+
+]
+
+
+
+requirements = '''
+
+torch==2.0.1+cpu
+
+torchvision==0.15.2+cpu
+
+torchaudio==2.0.2+cpu
+
+-f https://download.pytorch.org/whl/torch_stable.html
+
+
+
+flask
+
+numpy
+
+pandas
+
+matplotlib
+
+scikit-learn
+
+tqdm
+
+seaborn
+
+jupyterlab
+
+adversarial-robustness-toolbox
+
+foolbox
+
+textattack
+
+git+https://github.com/cleverhans-lab/cleverhans.git
+
+'''
+
+
+
+readme_content = '''# AdversarialAI Lab
+
+
+
+A lightweight, CPU-only adversarial machine learning lab with PyTorch, Flask, and Jupyter integration. Built for experimentation, interpretability, and education.
+
+'''
+
+
+
+dashboard_html = '''<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>AdversarialAI Dashboard</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+
+    <h1>Welcome to the AdversarialAI Dashboard</h1>
+
+    <p>Use the navigation tabs to explore attack methods and tools.</p>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>
+
+'''
+
+
+
+style_css = '''body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #0f0f0f;
+
+    color: #f0f0f0;
+
+    text-align: center;
+
+    padding: 2rem;
+
+}'''
+
+
+
+script_js = '''console.log("Dashboard JS loaded");'''
+
+
+
+dashboard_py = '''from flask import Flask, render_template
+
+
+
+app = Flask(__name__)
+
+
+
+@app.route('/')
+
+def home():
+
+    return "AdversarialAI Dashboard is running! Visit http://127.0.0.1:5000"
+
+
+
+if __name__ == '__main__':
+
+    app.run(debug=True)
+
+'''
+
+
+
+def create_file(path, content):
+
+    with open(path, 'w') as f:
+
+        f.write(content)
+
+    print(f"  Created file: {path}")
 
 
 
 def main():
 
-    venv_path = "./venv"
+    base_path = os.getcwd()
 
-    python_bin = f"{venv_path}/bin/python"
-
-    pip_bin = f"{venv_path}/bin/pip"
+    print(f"Creating lab structure under {base_path}...")
 
 
 
-    # Step 1: Create virtual environment if not exists
+    for folder in lab_structure:
 
-    if not os.path.exists(venv_path):
+        full_path = os.path.join(base_path, folder)
 
-        print("[+] Creating Python 3.10 virtual environment...")
+        os.makedirs(full_path, exist_ok=True)
 
-        run("python3.10 -m venv venv")
-
-    else:
-
-        print("[+] Virtual environment already exists in venv")
+        print(f"  Created: {full_path}")
 
 
 
-    # Step 2: Upgrade pip
+    create_file(os.path.join(base_path, "requirements.txt"), requirements)
 
-    print("[+] Upgrading pip...")
+    create_file(os.path.join(base_path, "README.md"), readme_content)
 
-    run(f"{pip_bin} install --upgrade pip")
+    create_file(os.path.join(base_path, "dashboard", "dashboard.py"), dashboard_py)
 
+    create_file(os.path.join(base_path, "dashboard", "templates", "index.html"), dashboard_html)
 
+    create_file(os.path.join(base_path, "dashboard", "static", "css", "style.css"), style_css)
 
-    # Step 3: Install CPU-only PyTorch, torchvision, torchaudio
-
-    print("[+] Installing CPU-only PyTorch, torchvision, torchaudio...")
-
-    run(
-
-        f"{pip_bin} install torch==2.0.0+cpu torchvision==0.15.0+cpu torchaudio==2.0.0+cpu "
-
-        "-f https://download.pytorch.org/whl/cpu/torch_stable.html"
-
-    )
+    create_file(os.path.join(base_path, "dashboard", "static", "js", "script.js"), script_js)
 
 
 
-    # Step 4: Install other Python packages
-
-    print("[+] Installing other required packages...")
-
-    run(
-
-        f"{pip_bin} install tensorflow==2.10 keras numpy pandas matplotlib "
-
-        "scikit-learn tqdm seaborn jupyterlab adversarial-robustness-toolbox "
-
-        "foolbox textattack flask"
-
-    )
+    print("\n✅ Lab setup complete. You can now add attack methods and notebooks.")
 
 
 
-    # Step 5: Install CleverHans from GitHub
-
-    print("[+] Installing CleverHans from GitHub...")
-
-    run(f"{pip_bin} install git+https://github.com/cleverhans-lab/cleverhans.git")
-
-
-
-    print("[✔] Setup complete. Activate your environment using: source venv/bin/activate")
-
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     main()
-
+    
