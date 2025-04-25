@@ -42,47 +42,16 @@ This lab has an integrated testing notebook as well as a testing dashboard
 
 ## Getting Started
 
-1. **Clone the Repository:**
+1. python3.10 setup_lab.py to setup the lab environment. Use Python 3.10 explicitly to make sure you're using the correct version.
+2. The script will:
+   - Create /projects/AdversarialAI with subfolders like methods, notebooks, dashboard, data, etc.
+   - Write out a requirements.txt file tailored for your CPU-only, PyTorch setup.
+   - Create a starter dashboard.py file in the dashboard/ folder.
+   - Write a structured README.md.
+   - Offer printed confirmation messages in the terminal for each step it completes.
+3. Verify the Structure Was Created running the tree command. If tree is not installed, install it with: sudo apt install tree and thentree ~<your path>
 
-   ```bash
-   git clone https://github.com/your-username/AdversarialAI-Lab.git
-   cd AdversarialAI-Lab
-   ```
 
-2. **Run the Setup Script:**
-
-   The `setup_lab.py` script will handle the environment setup, installation of dependencies, and everything needed to get started.
-   This may take 2-5 minutes depending on your system.
-   
-   ```bash
-   python3 setup_lab.py
-   ```
-
-   This will:
-   - Create a Python 3.10 virtual environment.
-   - Install necessary packages including PyTorch (CPU-only), TensorFlow, and additional libraries for adversarial robustness.
-   - Install CleverHans directly from GitHub.
-   ![image](https://github.com/user-attachments/assets/39c2d671-9114-49ce-8ace-8e88f056d7ba)
-
-4. **Activate the Virtual Environment:**
-
-   Once the setup is complete, activate the virtual environment:
-
-   ```bash
-   source venv/bin/activate
-   ```
-   ![image](https://github.com/user-attachments/assets/587c9115-63fa-479c-b409-94a44cae3bd4)
-
-   NOTE: the setup_lab.py already ran the requirements.txt file, however, the file is included in this repo as refernce and for         future updates:  pip install -r requirements.txt and if that doesn't work then: pip install torch==2.0.0+cpu 
-   torchvision==0.15.0+cpu    torchaudio==2.0.0+cpu \ -f https://download.pytorch.org/whl/cpu/torch_stable.html   --> This is 
-   needed because CPU-only versions aren’t on the default PyPI index.
-
-5. **Auto-Create the Lab Structure**
-   Save it as create_lab_structure.py in your project root.  Run it from your terminal. This will neatly generate your folders, each    with a simple README to keep things organized:    python3 create_lab_structure.py
-   ![image](https://github.com/user-attachments/assets/1390c5b1-4441-4901-a8dd-c7bc89d887a4)
-
-6. See the folder for how to create the Adversarial AI Dashboard
-7. **Run the Attack Simulations:**
 
 
 ## License
