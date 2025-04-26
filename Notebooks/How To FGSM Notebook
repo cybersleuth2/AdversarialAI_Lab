@@ -12,6 +12,10 @@ Explain predictions before and after.
   source venv/bin/activate
   jupyter lab
 
+  Error messages about missing libraryies may require the requirements.txt to be updated:
+    ipywidgets
+    imageio
+
 **Then, in your browser:**
   Navigate to notebooks/FGSM.ipynb
   Open it
