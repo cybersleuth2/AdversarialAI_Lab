@@ -13,8 +13,7 @@ Explain predictions before and after.
   jupyter lab
 
   Error messages about missing libraryies may require the requirements.txt to be updated:
-    ipywidgets
-    imageio
+    ipywidgets an;d imageio; then, reemmber to install them pip install imageio ipywidgets
 
 **Then, in your browser:**
   Navigate to notebooks/FGSM.ipynb
