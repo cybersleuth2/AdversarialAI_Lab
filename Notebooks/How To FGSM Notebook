@@ -1,15 +1,23 @@
 📘 Notebook name: FGSM.ipynb
 📁 Path: notebooks/FGSM.ipynb
 
-Here's what the notebook will include:
-
+**Here's what the notebook will include:**
 Load a small test image from MNIST.
-
 Load a pretrained model (from models/simple_mnist.pth).
-
 Generate an FGSM adversarial example.
-
 Show original, adversarial, and difference side by side.
-
 Explain predictions before and after.
 
+✅ **How to Run the Jupyter Notebook**
+  source venv/bin/activate
+  jupyter lab
+
+**Then, in your browser:**
+  Navigate to notebooks/FGSM.ipynb
+  Open it
+  Run cells top-to-bottom using Shift+Enter
+
+**You’ll be able to slide through:**
+  Different MNIST digits (image_idx)
+  Different epsilon values for perturbation
+  “compare side-by-side difference” heatmap or perturbation intensity visual
