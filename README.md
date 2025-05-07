@@ -1,4 +1,4 @@
-**IN PROGRESS**
+**A WORK IN PROGRESS**
 
 # Adversarial AI Lab (CPU ONLY)
 
@@ -10,17 +10,16 @@ This repository contains the resources for setting up and running an out-of-the-
 ## Adversarial AI Dashboard v Notebook
 This lab has an integrated testing notebook as well as a testing dashboard
 
- **Notebooks**: Step-by-step, interactive tutorials for learning, testing, and iterating. Use the Notebook when:
-   - You're learning or experimenting.
-   - You want to follow each step manually.
-   - You’re reviewing or debugging results.
-   - You want fine control over attack parameters and code.
+ **Notebooks**: Step-by-step, interactive tutorials for learning, testing, and iterating. Use the Notebook for:
+   - learning or experimenting.
+   - following each step manually.
+   - reviewing or debugging results.
+   - fine control over attack parameters and code.
      
 **Dashboard**: Visual front-end for quick access, running attacks, uploading models/data. Use the Dashboard when:
-   - You want a simple UI for testing without coding.
-   - You want to upload models or data and run attacks.
-   - You’re demonstrating your lab or showing others.
-   - You want to keep everything light and unified in a browser.
+   - want a simple UI for testing without coding.
+   - want to upload models or data and run attacks.
+   - want to keep everything light and unified in a browser.
 
 
 ## Lab Diretory Structure
