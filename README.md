@@ -24,7 +24,8 @@ This lab has an integrated testing notebook as well as a testing dashboard
 
 ## Lab Diretory Structure
 
-![image](https://github.com/user-attachments/assets/e6435499-411f-447b-baaa-2a8540425233)
+![image](https://github.com/user-attachments/assets/457ca8de-6cb2-4fc3-a90c-14761d9300fe)
+
 
 
 ## Getting Started
