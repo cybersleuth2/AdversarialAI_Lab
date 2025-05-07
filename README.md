@@ -17,9 +17,9 @@ This lab has an integrated testing notebook as well as a testing dashboard
    - fine control over attack parameters and code.
      
 **Use the Dashboard** for visual front-end for quick access, running attacks, uploading models/data:
-   - want a simple UI for testing without coding.
-   - want to upload models or data and run attacks.
-   - want to keep everything light and unified in a browser.
+   - simple UI for testing without coding.
+   - upload models or data and run attacks.
+   - keep everything light and unified in a browser.
 
 
 ## Lab Diretory Structure
